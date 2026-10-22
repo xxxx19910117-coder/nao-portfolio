@@ -9,6 +9,52 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    @media (min-width: 701px) and (max-width: 1024px) {
+      .about h2,
+      .works h2,
+      .skills h2,
+      .contact h2 {
+        font-size: clamp(44px, 7vw, 68px);
+        line-height: 1.08;
+        letter-spacing: -0.07em;
+        text-wrap: balance;
+      }
+
+      .works h2 {
+        white-space: nowrap;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .about h2,
+      .works h2,
+      .skills h2,
+      .contact h2 {
+        font-size: clamp(38px, 10vw, 52px);
+        line-height: 1.12;
+        letter-spacing: -0.06em;
+        text-wrap: balance;
+      }
+
+      .works h2 {
+        white-space: nowrap;
+      }
+
+      .about-grid,
+      .skills-grid {
+        padding-top: clamp(48px, 12vw, 65px);
+      }
+
+      .works-heading {
+        padding-top: clamp(48px, 12vw, 65px);
+      }
+
+      .contact-inner {
+        padding-top: clamp(48px, 12vw, 65px);
+      }
+    }
+  </style>
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -43,11 +89,10 @@
     <section class="about section-pad" id="about">
       <div class="section-label"><span>01</span><span>ABOUT</span></div>
       <div class="about-grid">
-        <h2>想いを整え、<br><em>かたちにする。</em></h2>
+        <h2>人に寄り添い、<br><em>想いをカタチにするWeb制作。</em></h2>
         <div class="about-text">
-          <p class="lead-text">はじめまして、naoです。<br>Web制作を通して、あなたのサービスやブランドの魅力が、必要な人へきちんと届くお手伝いをしています。</p>
-          <p>デザインの美しさだけでなく、情報の順序や使いやすさまで考えたサイトづくりを大切にしています。相談しながら、目的に合った最適な形を一緒に見つけていきます。</p>
-          <div class="about-sign"><span>Based in Japan</span><span>Available for freelance projects</span></div>
+          <p class="lead-text">はじめまして、naoです。</p>
+          <p>理学療法士として約10年間、人と向き合い、一人ひとりの悩みや目標に寄り添ってきました。<br><br>その経験を活かし、Web制作でもお客様の想いや目的を丁寧に汲み取り、分かりやすく伝わるホームページづくりを大切にしています。<br><br>現在はHTML・CSS・JavaScriptを中心に学びながら、シンプルで見やすく、使いやすいWebサイトの制作に取り組んでいます。<br><br>一つひとつのご依頼に誠実に向き合い、安心して相談していただける制作者を目指しています。</p>
         </div>
       </div>
     </section>
