@@ -23,6 +23,19 @@
       object-fit: contain;
     }
 
+    .nico-preview {
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .work-card + .work-card {
+      margin-top: 72px;
+    }
+
+    .work-visual-pending {
+      background: #1c1d1c;
+    }
+
     .about h2,
     .works h2,
     .skills h2,
@@ -106,6 +119,10 @@
         height: auto;
         min-height: 0;
         aspect-ratio: 2522 / 1376;
+      }
+
+      .work-card + .work-card {
+        margin-top: 48px;
       }
 
       .about h2,
@@ -196,6 +213,16 @@
     <section class="works section-pad" id="works">
       <div class="section-label"><span>02</span><span>SELECTED WORKS</span></div>
       <div class="works-heading"><h2>つくったもの。</h2><p>ひとつひとつの目的に向き合い、<br>体験としてデザインしています。</p></div>
+      <a class="work-card" href="https://xxxx19910117-coder.github.io/nico-official-website/" target="_blank" rel="noopener noreferrer" aria-label="NICO OFFICIAL WEBSITEのプロジェクト詳細">
+        <div class="work-visual">
+          <img class="work-preview nico-preview" src="nico-preview.png" alt="NICO OFFICIAL WEBSITEのWebサイトプレビュー">
+        </div>
+        <div class="work-info">
+          <div><p class="work-type">CLIENT PROJECT / OFFICIAL WEBSITE</p><h3>NICO OFFICIAL WEBSITE</h3></div>
+          <div class="work-detail"><p>美容・暮らし・育児を中心に活動するクリエイターの公式サイト。プロフィールや制作実績、サービス内容を整理し、企業からの仕事依頼につながる導線を設計しました。</p><p>担当範囲：デザイン・コーディング・公開・運用</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <span class="view-project">VIEW PROJECT <b>↗</b></span>
+        </div>
+      </a>
       <a class="work-card" href="https://xxxx19910117-coder.github.io/NAO-BOXING-FITNESS/" target="_blank" rel="noreferrer">
         <div class="work-visual">
           <img class="work-preview" src="boxing-preview.png" alt="NAO BOXING FITNESSのWebサイトプレビュー">
